@@ -1,0 +1,150 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(./pexels-pixabay-210574.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+@media only screen and (max-width:650px){
+    body{
+        background-repeat: no-repeat;
+    }
+}
+.header{
+    width: 100%;
+    display: flex;
+    /* border-style: solid; */
+    /* border-color: black; */
+    /* background-color: #fff; */
+}
+.logo{
+    width: 25%;
+    /* border-style: dashed; */
+    /* border-color: greenyellow; */
+}
+.logo img{
+    width: 150px;
+    height: 150px;
+    /* border-color: red; */
+    /* border-style: groove; */
+    border-radius: 100px;
+    margin-left: 72.5px;
+}
+.logo img:hover{
+    transform: rotate(360deg);
+    transition: 1.3s;
+}
+.navi{
+    width: 40%;
+    display: inline-flex;
+    align-items: center;
+    /* border-style: double; */
+    /* border-color: chocolate; */
+    font-size: 16px;
+}
+.navi ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+.navi ul li{
+    float: left;
+}
+.navi ul li a{
+    display: block;
+    color: black;
+    text-decoration: none;
+    padding: 25px 20px;
+}
+.navi ul li a:hover{
+    color: #fff;
+    background-color: dodgerblue;
+}
+.buttons{
+    padding: 5px 140px;
+    width: 30%;
+}
+.buttons button{
+    width: 190px;
+    height: 60px;
+    margin-top: 10px;
+    color: dodgerblue;
+    background-color: #fff;
+    border-color: transparent;
+    border-radius: 40px;
+}
+.buttons button:hover{
+    color: #fff;
+    background-color: dodgerblue;
+    transition: 1.3s;
+    transform: rotate(360deg);
+    border-radius: 50px;
+}
+@media only screen and (max-width:650px){
+    .header{
+        flex-direction: column;
+    }
+    .buttons{
+        padding: 5px 5px;
+    }
+    .logo, .navi, .buttons{
+        width: 100%;
+    }
+}
+.menu{
+    width: 100%;
+    display: flex;
+    /* border-style: dashed; */
+    /* border-color: blue; */
+    height: 650px;
+}
+.menu1{
+    width: 55%;
+    height: 300px;
+    /* border-style: solid; */
+    /* border-color: darkblue; */
+    margin-left: 660px;
+    margin-top: 90px;
+
+}
+.menu1 h1{
+    font-size: 60px;
+    font-weight: 400px;
+    color: royalblue;
+}
+.menu1 p{
+    font-size: 30px;
+    font-weight: 600px;
+    margin-top: 10px;
+    color: skyblue;
+}
+.menu1 button{
+    color: #fff;
+    background-color: dodgerblue;
+    width: 190px;
+    height: 60px;
+    margin-top: 40px;
+    margin-left: 80px;
+    border-radius: 40px;
+}
+.menu1 button:hover{
+    color: dodgerblue;
+    background-color: #fff;
+    transition: 1.3s;
+    transform: rotate(360deg);
+    border-radius: 50px;
+}
+@media only screen and (max-width:650px){
+    .menu1{
+        margin-left: 60px;
+    }
+    .menu1 button{
+        margin-left: 8px;
+    }
+}
+
+
